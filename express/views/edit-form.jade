@@ -1,0 +1,83 @@
+head
+	<link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css'>
+body
+	h1 CHOU DOWN
+	h2 What's in your kitchen?
+	form(method="post", action="/ingredient/")
+		p Ingredients: 
+		input(id = "ingredient", type = "text", name = "myIngredients[]")
+		p 
+		input(id="ingredient", type = "text", name = "myIngredients[]")
+		p 
+		input(id="ingredient", type = "text", name = "myIngredients[]")
+		p 
+		input(id="ingredient", type = "text", name = "myIngredients[]")
+		p 
+		input(id="ingredient", type = "text", name = "myIngredients[]")
+		p 
+		input(id="ingredient", type = "text", name = "myIngredients[]")
+		p 
+		input(id="ingredient", type = "text", name = "myIngredients[]")
+		p 
+		input(id="ingredient", type = "text", name = "myIngredients[]")
+		p 
+		input(id="ingredient", type = "text", name = "myIngredients[]")
+		p 
+		input(id="ingredient", type = "text", name = "myIngredients[]")
+		p 
+		input(id = "submit", type = "submit", value = "Find me recipes!")
+
+style.
+	body {
+		font-family: 'Loved by the King', cursive;
+		color: white;
+		background: url(http://lovelanekitchen.com/wp-content/uploads/2013/03/LLK_Chalkboard-background.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size:cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	h1 {
+		text-align: center;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		font-size: 50px;
+	}
+
+	h2 {
+		text-align: center;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		font-size: 40px;
+	}
+
+	p {
+		font-size: 40px;
+		margin: 0px;
+	}
+
+	#ingredient {
+		font-family: 'Loved by the King', cursive;
+		font-size: 30px;
+		color: white;
+		background-color: transparent;
+		border-style: solid;
+		border-width: 0px 0px 2px 0px;
+		border-color: white;
+		margin-top: 0px;
+		width: 150px;
+
+	}
+
+	#submit {
+		font-family: 'Loved by the King', cursive;
+		font-size: 30px;
+		color: white;
+		background-color: transparent;
+		border-style: solid;
+		border-width: 1px 1px 1px 1px;
+		border-color: white;
+		margin-top: 20px;
+
+	}

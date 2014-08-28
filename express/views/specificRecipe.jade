@@ -1,0 +1,130 @@
+head
+	<link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css'>
+
+body
+	
+	#intro
+		h1 #{recipe.name}
+		p cuisine: #{recipe.cuisine}
+
+
+
+	#ingredients
+		h2 Ingredients
+		ul
+			each rec in ingredients 
+				p 
+					| (#{rec.ingredient_quantity} 
+					| #{rec.ingredient_unit}) 
+					a(href='/ingredient/#{rec.ingredient}') #{rec.ingredient} <br> 
+
+	#instructions
+		h2 Instructions
+		ul
+			each rec in instructions
+				p
+					| #{rec.instruction}
+
+
+
+
+style.
+	body {
+		font-size: 25px; 
+		color:white;
+		font-family: 'Loved by the King', cursive;
+		background: url(http://lovelanekitchen.com/wp-content/uploads/2013/03/LLK_Chalkboard-background.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size:cover;
+		-o-background-size: cover;
+		background-size: cover;
+		
+	}
+
+	#intro {
+		text-align: center;
+	}
+
+	#intro h1 {
+		margin-bottom: 0px;
+		margin-left: 10px;
+		font-weight: 400;
+		text-transform: uppercase;
+		
+	}
+
+	#intro p {
+		margin-top: 0px;
+		margin-left: 10px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		font-size: 20px;
+		font-weight: 100;
+		text-transform: lowercase;
+		text-align:center;
+	}
+
+	#ingredients {
+		text-align:left;
+	}
+
+	#ingredients h2 {
+		font-size: 35px;
+		margin-left: 10px;
+		margin-top: 0px;
+		font-weight: 100;
+		padding-bottom: 0px;
+		margin-bottom: 5px;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+
+	#ingredients ul {
+		font-size: 25px;
+		font-weight: 100;
+		padding-left: 15px;
+		margin-top: 0px;
+		text-transform: lowercase;
+	}
+
+	#ingredients p {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+		
+	a {
+		text-decoration: none;
+		color:white;
+	}
+
+	#instructions {
+		text-align: left;
+	}
+
+	#instructions h2 {
+		font-size: 35px;
+		margin-bottom: 5px;
+		padding-bottom: 0px;
+		margin-left: 10px;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+
+	#instructions ul {
+		font-size: 25px;
+		font-weight: 100;
+		padding-left: 15px;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+
+	#instructions p {
+		margin-top: 5px;
+		margin-bottom: 15px;
+	}
+
+
+
+	
+
+
